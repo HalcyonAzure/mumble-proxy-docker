@@ -30,11 +30,11 @@
 ## 环境变量
 以下是可用于配置 Mumble Web Proxy 的环境变量：
 
-MWP_LISTEN_WS: Websocket 监听端口，必须设置此变量。
-MWP_SERVER: Mumble 服务器的地址和端口，必须设置此变量。
-MWP_ACCEPT_INVALID_CERTIFICATE: 若设置为 true，则接受无效的 SSL 证书。可能用于自签名证书的情况。
-MWP_ICE_PORT_MIN 和 MWP_ICE_PORT_MAX: 定义 ICE 协议使用的端口范围。
-MWP_ICE_IPV4 和 MWP_ICE_IPV6: 分别指定要使用的 IPv4 和 IPv6 地址。当应用位于防火墙之后时，通过这些变量指定公网地址以确保 WebRTC 功能的正常使用。
+* ```MWP_LISTEN_WS```: Websocket 监听端口，必须设置此变量。
+* ```MWP_SERVER```: Mumble 服务器的地址和端口，必须设置此变量。
+* ```MWP_ACCEPT_INVALID_CERTIFICATE```: 若设置为 true，则接受无效的 SSL 证书。可能用于自签名证书的情况。
+* ```MWP_ICE_PORT_MIN``` 和 ```MWP_ICE_PORT_MAX```: 定义 ICE 协议使用的端口范围。
+* ```MWP_ICE_IPV4``` 和 ```MWP_ICE_IPV6```: 分别指定要使用的 IPv4 和 IPv6 地址。当应用位于防火墙之后时，通过这些变量指定公网地址以确保 WebRTC 功能的正常使用。
 
 ## 注意事项
 确保您的 Mumble 服务器已正确配置，并且可通过 MWP_SERVER 指定的地址和端口访问。
